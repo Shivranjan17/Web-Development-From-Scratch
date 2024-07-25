@@ -2,7 +2,7 @@
 //Object.create (constructor method)
 
 
-
+// this is all about object literals
 //object literals
 
 const mySym = Symbol("key1")
