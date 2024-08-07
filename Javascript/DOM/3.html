@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .main {
+            background-color: green;
+            width: 100px;
+            height: 50px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body style="background-color: black; color: white;">
+    
+</body>
+<script>
+    // Create a new element
+    const div = document.createElement('div');
+    console.log(div);
+
+    // Add a class to the element
+    div.className = "main";
+    
+    // Generate a random ID for the element
+    div.id = Math.round(Math.random() * 10 + 1);
+
+    // Set attributes for the element
+    div.setAttribute("title", "generated title");
+
+    // Set inline styles for the element (if you want to override the styles defined in CSS)
+    div.style.backgroundColor = "green"; // This is redundant since the CSS already sets it
+    div.style.width = "700px"; // Width of the div
+    div.style.height = "50px"; // Height of the div
+    div.style.pading = "12px"
+
+    // Create and append text to the element
+    const addText = document.createTextNode("Shivranjan");
+    div.appendChild(addText);
+
+    // Append the element to the body
+    document.body.appendChild(div);
+</script>
+</html>
