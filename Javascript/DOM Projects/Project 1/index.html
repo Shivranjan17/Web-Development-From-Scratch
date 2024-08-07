@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #333;
+        }
+        .navbar span {
+            background-color: #444;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .navbar span a {
+            color: white; /* Ensure links are white */
+            text-decoration: none; /* Remove underline */
+        }
+        .navbar span:hover {
+            background-color: #555;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 60px);
+        }
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            border:2px solid black;
+            border-radius: 5px;
+        }
+        #red { background-color: red; color: rgb(0, 0, 0); }
+        #green { background-color: green; color: rgb(0, 0, 0); }
+        #blue { background-color: blue; color: rgb(0, 0, 0); }
+        #yellow { background-color: yellow; color: black; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <span><a href="/" aria-current="page">Home</a></span> <!-- Home link inside span -->
+        <span><a href="https://github.com/Shivranjan17">GitHub</a></span> <!-- GitHub link inside span -->
+    </div>
+    <h1>Color Scheme Switcher</h1>
+    <div class="container">
+        <span class="button" id="red">Red</span>
+        <span class="button" id="green">Green</span>
+        <span class="button" id="blue">Blue</span>
+        <span class="button" id="yellow">Yellow</span>
+    </div>
+    <h2>Try clicking on the colors above to change the background color of this page!</h2> <!-- Corrected text for clarity -->
+    <script src = "script.js"> </script>
+</body>
+</html>
