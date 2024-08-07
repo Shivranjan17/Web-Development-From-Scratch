@@ -1,0 +1,63 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+    color: #fff;
+  }
+  
+  /* Navigation bar styles */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  nav a:hover {
+    background-color: #444;
+  }
+  
+  /* Centered container styles */
+  .center {
+    display: flex;
+    height: calc(100vh - 50px); /* Adjust for the navigation height */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  /* Banner styles */
+  #banner {
+    font-size: 24px;
+    background-color: #ff6600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  #banner span {
+    font-weight: bold;
+  }
+  
+  /* Clock styles */
+  #clock {
+    font-size: 48px;
+    background-color: orange;
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
