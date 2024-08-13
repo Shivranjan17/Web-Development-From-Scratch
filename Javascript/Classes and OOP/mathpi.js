@@ -17,19 +17,23 @@ console.log(descriptor);
 const chai = {
     name : 'ginger chai',
     price :250,
-    isAvailable:true
+    isAvailable:true,
+
+    orderChai : function(){
+        console.log("chai nahi bani ")
+    }
 }
 console.log(Object.getOwnPropertyDescriptor(chai,"name"));
 
 Object.defineProperty(chai, 'name', {
     //writable: false,
-    enumerable: true,
+    enumerable: true,//false lagaya to name print nahi hoga
     
 })
 
 console.log(Object.getOwnPropertyDescriptor(chai, "name"));
 
-for (let [key, value] of Object.entries(chai)) {
+for (let [key, value] of Object.entries(chai)) {// Object is by default not iterable to make it iterable make use of Object.entries
     if (typeof value !== 'function') {
         
         console.log(`${key} : ${value}`);
